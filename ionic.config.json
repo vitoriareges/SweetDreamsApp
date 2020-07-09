@@ -1,5 +1,7 @@
 {
   "name": "SweetDreamsApp",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "angular"
 }
