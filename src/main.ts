@@ -7,6 +7,11 @@ import { environment } from './environments/environment';
 if (environment.production) {
   enableProdMode();
 }
-
+SendVerificationMail() {
+  return this.ngFireAuth.auth.currentUser.sendEmailVerification()
+  .then(() => {
+    this.router.navigate(['verify-email']);
+  })
+}
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.log(err));

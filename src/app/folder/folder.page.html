@@ -18,7 +18,28 @@
   </div>
   <div id="container">
     <strong class="capitalize">Welcome to Sweet Dreams!</strong>
-    <p>Your Brazilian Bakery in Dublin</p>
-    <p>To make a purchase, please creat an account or Login to our mobile app </p>
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/7.16.0/firebase-analytics.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyB-VH7AQ6ZnK3k7sQoKDg1sefOHVnIMPdY",
+    authDomain: "final-project-9f680.firebaseapp.com",
+    databaseURL: "https://final-project-9f680.firebaseio.com",
+    projectId: "final-project-9f680",
+    storageBucket: "final-project-9f680.appspot.com",
+    messagingSenderId: "697937996207",
+    appId: "1:697937996207:web:367ca927940510e692675a",
+    measurementId: "G-WEH00H3M4H"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+  firebase.analytics();
+</script>
   </div>
 </ion-content>

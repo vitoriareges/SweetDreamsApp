@@ -18,6 +18,26 @@ const routes: Routes = [
   {
     path: 'cart',
     loadChildren: () => import('./app/cart/cart.module').then( m => m.CartPageModule)
+  },
+  {
+    path: 'auth',
+    loadChildren: () => import('./shared/auth/auth.module').then( m => m.AuthPageModule)
+  },
+  {
+    path: 'user',
+    loadChildren: () => import('./shared/user/user.module').then( m => m.UserPageModule)
+  },
+  {
+    path: 'registration',
+    loadChildren: () => import('./registration/registration.module').then( m => m.RegistrationPageModule)
+  },
+  {
+    path: 'verify-email',
+    loadChildren: () => import('./verify-email/verify-email.module').then( m => m.VerifyEmailPageModule)
+  },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
   }
 ];
 
